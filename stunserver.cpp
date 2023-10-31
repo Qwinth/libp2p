@@ -54,7 +54,7 @@ int main() {
                     JsonNode node;
                     node.addPair("from", "stunserver");
                     node.addPair("status", "disconnected");
-                    node.addPair("str_address", myrecv.addr.str());
+                    node.addPair("string", myrecv.addr.str());
 
                     sock.ssendto(json.dump(node), i);
                 }
